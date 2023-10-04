@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AcuuWeather</title>
+    <link rel="icon" href="./PngItem_990331.png">
+</head>
+
+<body>
+    <!-- header section  -->
+    <div class="container-fluid header">
+        <div class="header-container container">
+            <div class="logo">
+                
+                <p>AcuuWeather <img src="./PngItem_990331.png" alt="" style="width: 30px;"></p>
+              
+            </div>
+            <div class="searchbar">
+                <input type="search" name="search" id="searchbar" placeholder="Enter City Name.." >
+                <button onclick="readData()">search</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- main-section  -->
+
+    <div class="container-card">
+        <div class="card ">
+            <p>CURRENT WEATHER</p>
+            <div class="cityname">
+                <h4 id="city"></h4>
+            </div>
+            <div class="displaytemp">
+                <h1 id="temp"></h1>
+            </div>
+            <div class="main padding">
+                <p id="main"></p>
+            </div>
+            <div class="humidity padding">
+                <p><i class="fa-regular fa-wind"></i>Humidity : <span id="humidity"></span></p>
+            </div>
+            <div class="wind padding">
+                <p>Wind Speed : <span id="windspeed"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
